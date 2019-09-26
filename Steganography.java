@@ -20,6 +20,7 @@ public class Steganography {
     /// @return the deep copy of the pixels that were copied
     public static int[][][] copy(int[][][] px) {
         //TODO: IMPLEMENT
+	    
 	//create a new 3d array with 1std same as px
 	int[][][] copy = new int[px.length][][];
 
@@ -78,6 +79,7 @@ public class Steganography {
     ///         into to a color 
     public static int[] positionToError( int chpos ) {
         //TODO: IMPLEMENT
+	    
 	//create and return array of the chpos+1 (error val)
 	int error_val = chpos + 1;;
 	int[] error = {error_val, error_val, error_val};
@@ -93,6 +95,7 @@ public class Steganography {
     ///         the amount of error in the input 
     public static int errorToPosition( int[] error ) {
         //TODO: IMPLEMENT
+
 	//chpos is error-1 (opposite of posToError), element error same for all
 	//pos of error, return error[0]-1
 	int chpos = error[0]-1;
